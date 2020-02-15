@@ -17,11 +17,14 @@ var App = {
   },
 
   fetch: function(callback = ()=>{}) {
-    Parse.readAll((data) => {
-      console.log(data);
-      callback();
+    Parse.readAll(data => {
+      MessagesView.renderMessage(data);
+      RoomsView.renderRoom(data);
+      RoomsView.render(data);
+      callback(data);
     });
   },
+
 
   startSpinner: function() {
     App.$spinner.show();
@@ -33,3 +36,16 @@ var App = {
     FormView.setStatus(false);
   }
 };
+
+// function fetch(callback) {
+//   callback = callback || function() {}
+
+//   Parse.readAll(function(data) {
+//     callback(data);
+//   })
+// }
+
+
+// Parse.readAll(function(data) {
+//     consopl
+// })

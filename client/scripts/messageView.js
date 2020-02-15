@@ -1,16 +1,14 @@
 var MessageView = {
-  var compiled = _.template(
+  //this one is to create each chat box with username and messages
 
-`
+  render :_.template(`
 
-      <div class="chat">
-        <div class="username"></div>
-        <div></div>
-      </div>
+    <div class="chat">
+      <div class="username"><%= username %></div>
+        <div class="message"><%= text %></div>
+    </div>
 
-`)
+    `)
 
-
-  render :
 
 };

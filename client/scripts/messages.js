@@ -1,9 +1,12 @@
 var Messages = {
 
-  obtain: function(message) {
+  obtain: function() {
+    Parse.readAll();
+  },
+
+  add: function(message) {
     Parse.create(message);
   }
-
 
 
 };
