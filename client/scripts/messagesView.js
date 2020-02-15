@@ -29,7 +29,6 @@ var MessagesView = {
   //   singlehtml = MessageView.render({username, text});
   //   MessagesView.$chats.append(singlehtml);
   // },
-
   // renderAllMessage: function(data) {
     let {results} = data;
     var html = '';
@@ -47,7 +46,8 @@ var MessagesView = {
 
     }
 
-    MessagesView.$chats.append(html);
+
+    MessagesView.$chats.empty().append(html);
   }
 
 

@@ -1,13 +1,19 @@
 var Messages = {
 
-  obtain: function() {
-    Parse.readAll();
-  },
+  // obtain: function() {
+  //   Parse.readAll();
+  // },
 
   add: function(message) {
     Parse.create(message);
-  }
+  },
 
+
+  filterMessages: function() {
+    Parse.readfilter(RoomsView.$select.val(), (result) => {
+      MessagesView.renderMessage(result);
+    });
+  }
 
 };
 

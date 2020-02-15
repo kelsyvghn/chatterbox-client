@@ -5,22 +5,10 @@ var RoomsView = {
 
   initialize: function() {
     RoomsView.$button.click('button', RoomsView.render);
-
-    RoomsView.$select.on('change', function() {
-
-      Parse.readfilter(RoomsView.$select.val(), (result) => {
-        console.log(result);
-      });
-
-    });
-
+    RoomsView.$select.on('change', Messages.filterMessages);
   },
 
   render: function(data) {
-    let {results} = data;
-
-    //if clicked, then start filter and store into the object array and pass in an array renderMessage
-
 
   },
 
@@ -43,7 +31,7 @@ var RoomsView = {
   },
 
   rendertemplate: _.template(`
-    <option value="<%= room %>"><%= room %></option>
+    <option value="<%- room %>"><%- room %></option>
   `)
 
 
