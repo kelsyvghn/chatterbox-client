@@ -30,6 +30,7 @@ var MessagesView = {
   //   MessagesView.$chats.append(singlehtml);
   // },
   // renderAllMessage: function(data) {
+    console.log(data);
     let {results} = data;
     var html = '';
     for (var i = 0; i < results.length; i++) {

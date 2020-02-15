@@ -5,7 +5,10 @@ var Messages = {
   // },
 
   add: function(message) {
-    Parse.create(message);
+    //Parse.create(message, App.fetch())
+    Parse.create(message, function() {
+      App.fetch();
+    });
   },
 
 
@@ -14,6 +17,8 @@ var Messages = {
       MessagesView.renderMessage(result);
     });
   }
+
+
 
 };
 

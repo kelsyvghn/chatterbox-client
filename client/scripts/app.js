@@ -21,10 +21,9 @@ var App = {
       MessagesView.renderMessage(data);
       RoomsView.renderRoom(data);
       RoomsView.render(data);
-      callback(data);
+      callback();
     });
   },
-
 
   startSpinner: function() {
     App.$spinner.show();
@@ -44,6 +43,7 @@ var App = {
 //     callback(data);
 //   })
 // }
+var a = app.fetch = parse.redALL() = calllback(data)
 
 
 // Parse.readAll(function(data) {

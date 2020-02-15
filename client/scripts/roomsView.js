@@ -4,12 +4,11 @@ var RoomsView = {
   $select: $('#rooms select'),
 
   initialize: function() {
-    RoomsView.$button.click('button', RoomsView.render);
+    RoomsView.$button.click('button', Rooms.addRoom);
     RoomsView.$select.on('change', Messages.filterMessages);
   },
 
   render: function(data) {
-
   },
 
 

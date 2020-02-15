@@ -15,11 +15,9 @@ var FormView = {
     var object = {
       username: JSON.stringify(App.username),
       text: JSON.stringify(message),
-      roomname: 'lobby',
+      roomname: RoomsView.$select.val(),
     };
-
-
-
+    console.log();
     Messages.add(object);
 
   },
