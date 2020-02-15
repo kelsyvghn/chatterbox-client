@@ -1,10 +1,13 @@
 var Messages = {
 
-  add: function(message) {
+  obtain: function(message) {
     Parse.create(message);
   }
 
+
+
 };
+
 
 
 // var compiled = _.template("hello: <%= name %>"); // compiled({name: 'moe'});s

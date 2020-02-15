@@ -8,6 +8,7 @@ var MessagesView = {
 
   render: function() {
     //post data to api object
+
   }
 
 };

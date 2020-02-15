@@ -1,8 +1,8 @@
 var Rooms = {
 
-  add: function() {
-    console.log(hi);
-  }
+  // add: function() {
+  //   console.log(hi);
+  // }
 
 
 };

@@ -4,6 +4,17 @@
 
   - log { user, message, room } on click ///
 
-  
+
   - save message to server
     - send anything to the server
+
+
+
+-chatroom behavior
+  //-generate empty div to the html page
+  //-generate any message to the board
+  -get message from database
+  -file message to show by the room method
+  -add the add room method
+
+-add friend by clicking their name
