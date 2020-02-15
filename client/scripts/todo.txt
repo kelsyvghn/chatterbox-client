@@ -1,0 +1,9 @@
+- Save message to server
+  - console log text from submit box on click  !!!!!!!!!!!
+
+
+  - log { user, message, room } on click ///
+
+  
+  - save message to server
+    - send anything to the server
