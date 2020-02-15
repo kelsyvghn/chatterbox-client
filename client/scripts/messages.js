@@ -1,7 +1,14 @@
 var Messages = {
 
+  add: function(message) {
+    Parse.create(message);
+  }
 
 };
+
+
+// var compiled = _.template("hello: <%= name %>"); // compiled({name: 'moe'});s
+// => "hello: moe"
 
 //messages should be rendered in the following format:
 
