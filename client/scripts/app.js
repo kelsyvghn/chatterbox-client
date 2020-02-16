@@ -43,7 +43,7 @@ var App = {
 //     callback(data);
 //   })
 // }
-var a = app.fetch = parse.redALL() = calllback(data)
+// var a = app.fetch = parse.redALL() = calllback(data)
 
 
 // Parse.readAll(function(data) {
