@@ -13,8 +13,6 @@ var MessagesView = {
     //post data to api object
 
     ///you make an object with username and message by using the messages.obtain function and append it to the messageview
-
-
     //we need to get access to the data
     // var a  = MessagesView.render();
     // console.log(a);
