@@ -8,7 +8,7 @@ var Rooms = {
   },
 
   saveRoom : function(event) {
-    // Stop the browser from submitting the form
+    // Stop the browser from returning to default, empty page
     event.preventDefault();
     //var texts = document.getElementById('message')
     var message = Rooms.$roomInput.val();

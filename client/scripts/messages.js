@@ -1,8 +1,6 @@
 var Messages = {
 
-  // obtain: function() {
-  //   Parse.readAll();
-  // },
+
 
   add: function(message) {
     //Parse.create(message, App.fetch())
